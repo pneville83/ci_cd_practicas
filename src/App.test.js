@@ -37,15 +37,15 @@ test ('like 2 al sumar un click  ', () => {
   expect (like2.textContent).toBe ("1")
 })
 
-test ('like 3 al sumar 100  click  ', () => {
-  render ( <App />);
-  const button = screen.getByTestId ("plus3")
-  for (let i=0; i < 100; i++){
-    fireEvent.click (button);
-  }
-  const like2 = screen.getByTestId ("countLike3");
-  expect (like2.textContent).toBe ("110")
-})
+// test ('like 3 al sumar 100  click  ', () => {
+//   render ( <App />);
+//   const button = screen.getByTestId ("plus3")
+//   for (let i=0; i < 100; i++){
+//     fireEvent.click (button);
+//   }
+//   const like2 = screen.getByTestId ("countLike3");
+//   expect (like2.textContent).toBe ("110")
+// })
 
 test ('like 1 al restar 30  click  ', () => {
   render ( <App />);
