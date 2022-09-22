@@ -4,7 +4,7 @@ import './App.css';
 function App() {
 const [like, setLike] = useState (25);
 const [like2, setLike2] = useState (0);
-// const [like3, setLike3] = useState (10);
+const [like3, setLike3] = useState (10);
 
 function likes (){
   setLike ((prevLike)=> {
@@ -18,11 +18,11 @@ function likes2 (){
   });
 }
 
-// function likes3 (){
-//   setLike3 ((prevLike3)=> {
-//     return prevLike3 ? prevLike3 -1 : 0;
-//   });
-// }
+function likes3 (){
+  setLike3 ((prevLike3)=> {
+    return prevLike3 ? prevLike3 -1 : 0;
+  });
+}
 
 
   return (
@@ -35,9 +35,9 @@ function likes2 (){
       <button data-testid="plus2" onClick={()=> setLike2 ((prevlike2)=> prevlike2 + 1)} >1 Like +</button>
       <button data-testid="less2"  onClick={()=> likes2()} > 1 like - </button>
 
-      {/* <p data-testid="countLike3">{like3}</p>
+      <p data-testid="countLike3">{like3}</p>
       <button data-testid="plus3" onClick={()=> setLike3 ((prevLike3)=> prevLike3 + 1)} >1 Like +</button>
-      <button data-testid="less3"  onClick={()=> likes3()} > 1 like - </button> */}
+      <button data-testid="less3"  onClick={()=> likes3()} > 1 like - </button>
 
 
     </div>
